@@ -9951,6 +9951,7 @@ pre code {
   width: 100%;
   padding-right: 14px;
   padding-left: 14px;
+  /* background-size: cover; */
 }
 
 .col {
@@ -11853,16 +11854,19 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(60, 167, 255, 0.5);
 }
 
+/*Botão entre em contato*/
 .btn-success {
   color: #fff;
-  background-color: #00d663;
-  border-color: #00d663;
+  background-color: #FF8305;
+  border-color: #FF8305;
+  /* border-color: #14127a; */
 }
 
 .btn-success:hover {
   color: #fff;
-  background-color: #00b051;
-  border-color: #00a34b;
+  background-color: #14127a;
+  border-color: #14127a;
+  border-style: none;
 }
 
 .btn-success:focus,
@@ -13734,6 +13738,7 @@ input[type="button"].btn-block {
   .navbar-expand-lg>.container-fluid {
     padding-right: 0;
     padding-left: 0;
+    /*Aqui 2*/
   }
 }
 
@@ -13741,32 +13746,39 @@ input[type="button"].btn-block {
   .navbar-expand-lg {
     flex-flow: row nowrap;
     justify-content: flex-start;
+
   }
 
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
+
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
+
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
+
     padding-left: 0.5rem;
   }
 
   .navbar-expand-lg>.container,
   .navbar-expand-lg>.container-fluid {
     flex-wrap: nowrap;
+
   }
 
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
+
     flex-basis: auto;
   }
 
   .navbar-expand-lg .navbar-toggler {
+
     display: none;
   }
 }
@@ -20157,9 +20169,15 @@ h6,
   font-size: 13px;
 }
 
+/*Cor do rodape*/
 .footer {
   color: #e5e5e5;
-  background: #3c37f1 url(../images/footer_bg.svg);
+  /* background: lightseagreen url(../images/footer_bg.svg); */
+  /* background: #FF8305 url(../images/footer_bg.svg); */
+  /* background: peru url(../images/footer_bg.svg); */
+  /* background: tomato url(../images/footer_bg.svg); */
+  background: black url(../images/footer_bg.svg);
+
   background-size: cover;
   background-position: left bottom;
 }
@@ -20224,10 +20242,13 @@ h6,
   color: #e5e5e5;
 }
 
+/*Mudar a cor da navbar*/
 .navbar {
   width: 100%;
   padding: 1.875rem 1rem;
   background-image: linear-gradient(180deg, #2C6095 10%, rgba(0, 0, 0, 0) 54%);
+  /* background-image: linear-gradient(180deg, #2C6095 54%, #FF8305 54%); */
+  background: rgba(0, 0, 0, 0);
 }
 
 
@@ -20328,7 +20349,7 @@ h6,
 }
 
 .navbar .navbar-toggler {
-  color: #ffffff;
+  color: #5c8bca;
 }
 
 .navbar .navbar-toggler-icon {
@@ -20377,9 +20398,12 @@ h6,
   }
 }
 
+/*AQUI*/
 .sidebar-overlay .home {
   padding-top: 0px;
-  background-position: 0px -121px;
+  background-position: 0px -400px;
+  background: url(../images/teste.png);
+  width: 100%;
 }
 
 .sidebar-overlay #mobile-menu-overlay {
@@ -20426,14 +20450,15 @@ html {
 }
 
 .home {
-  background: url("../images/teste.png");
-  background-repeat-y: no-repeat;
-  background-position: 0 -50px;
+  background: url("../images/teste.png") no-repeat;
+  background-size: cover;
+  background-position: 0px -50px;
   padding-top: 103px;
 }
 
 @media (max-width: 991px) {
   .home {
+    background-position-x: -48rem;
     padding-top: 71px;
   }
 }
@@ -20503,8 +20528,12 @@ section {
   height: 20px;
 }
 
+/*Mudar a cor do testimonial*/
+
 .testimonial {
-  background: #a70ff6 url("../images/testimonial-bg.svg");
+  /* background: #a70ff6 url("../images/testimonial-bg.svg"); */
+  background: blue url("../images/teste.svg");
+  color: blue;
   padding: 100px 0 70px 0;
   background-size: cover;
 }
@@ -20834,19 +20863,23 @@ section {
 
 /*Consertar logo*/
 .navbar .navbar-brand img {
-  width: 8rem;
+  width: 6.6rem;
 }
 
 /*Cores navbar*/
 /* Link */
 .navbar-nav .nav-item a {
-  color: #ad692e !important;
+  /* color: #A5C1DB !important; */
+  color: #2C6095 !important;
+  /* color: black !important; */
+  /* color: whitesmoke !important; */
+  /* color: #00b7ff !important; */
 }
 
 /* Button */
 .navbar-nav .nav-item .btn-success {
   transform: translatex(0px) translatey(0px);
-  color: #ffffff !important;
+  color: white !important;
 }
 
 /*Consertar textos mobile*/
@@ -20864,3 +20897,50 @@ section {
   display: inline-block;
   width: 342px;
 }
+
+
+@media (min-width:992px) {
+
+
+  nav {
+    height: 107px;
+  }
+
+}
+
+/*Cor fundo da Navbar*/
+.navbar-nav .nav-item .active {
+  background-color: #FF8305 !important;
+}
+
+
+@media (max-width:575px) {
+
+
+  #home {
+    min-width: 658px;
+  }
+
+}
+
+
+@media (max-width:575px) {
+
+
+  .main-banner .aos-init p {
+    padding-right: 200px;
+
+  }
+
+}
+
+/* @media (max-width:575px){ */
+
+/* Navigation */
+/* nav{
+   padding-top:-1px;
+   margin-bottom:-75px;
+   
+  } */
+
+/* } */
