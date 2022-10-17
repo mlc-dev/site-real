@@ -11,8 +11,11 @@
 	<link rel="stylesheet" href="vendors/owl.carousel/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="vendors/aos/css/aos.css">
 	<link rel="stylesheet" href="vendors/jquery-flipster/css/jquery.flipster.css">
+	<link rel="stylesheet" href="css/testimonial.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="images/favicon.png" />
+	<!-- <link rel="shortcut icon" href="images/favicon.png" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css'>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="60" style="background: transparent;">
@@ -39,9 +42,6 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#about">Sobre</a>
 					</li>
-					<!-- <li class="nav-item">
-						<a class="nav-link" href="#projects">Projetos</a>
-					</li> -->
 					<li class="nav-item">
 						<a class="nav-link" href="#testimonial">Testimonial</a>
 					</li>
@@ -52,7 +52,6 @@
 			</div>
 		</div>
 	</nav>
-
 	<div class="page-body-wrapper">
 		<section id="home" class="home">
 			<div class="container">
@@ -88,6 +87,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="clients pt-5 mt-5" data-aos="fade-up" data-aos-offset="-500">
 			<div class="container">
 				<div class="row">
@@ -119,10 +119,12 @@
 				</div>
 				<div class="row" data-aos="fade-up">
 					<div class="col-sm-4 text-center text-lg-left">
-						<div class="services-box" data-aos="fade-down" data-aos-easing="linear"
+						<div class="services-box " data-aos="fade-down" data-aos-easing="linear"
 							data-aos-duration="1300">
+
 							<img src="images/service-1-370x304.jpg" alt="integrated-marketing" data-aos="zoom-in"
-								style="width: 300px">
+								style="width: 300px;">
+
 							<h6 class="text-dark mb-3 mt-4 font-weight-medium">Auxiliar de Serviços Gerais.
 							</h6>
 							<p>Area de limpeza, serviços gerais</p>
@@ -347,123 +349,108 @@
 			</div>
 		</div>
 		</section>
-		<section class="testimonial" id="testimonial">
-			<div class="container">
-				<div class="row  mt-md-0 mt-lg-4">
-					<div class="col-sm-6 text-white" data-aos="fade-up">
-						<p class="font-weight-bold mb-3">Testimonials</p>
-						<h3 class="font-weight-medium">Our customers are our <br>biggest fans</h3>
-						<ul class="flipster-custom-nav">
-							<li class="flipster-custom-nav-item">
-								<a href="javascript:;" class="flipster-custom-nav-link" title="0"></a>
-							</li>
-							<li class="flipster-custom-nav-item">
-								<a href="javascript:;" class="flipster-custom-nav-link" title="1"></a>
-							</li>
-							<li class="flipster-custom-nav-item">
-								<a href="javascript:;" class="flipster-custom-nav-link active" title="2"></a>
-							</li>
-							<li class="flipster-custom-nav-item">
-								<a href="javascript:;" class="flipster-custom-nav-link" title="3"></a>
-							</li>
-							<li class="flipster-custom-nav-item">
-								<a href="javascript:;" class="flipster-custom-nav-link" title="4"></a>
-							</li>
-							<li class="flipster-custom-nav-item">
-								<a href="javascript:;" class="flipster-custom-nav-link" title="5"></a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-sm-6" data-aos="fade-up">
-						<div id="testimonial-flipster">
-							<ul>
-								<li>
-									<div class="testimonial-item">
-										<img src="images/testimonial/testimonial1.jpg" alt="icon"
-											class="testimonial-icons">
-										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam totam neque,
-											in nihil pariatur repudiandae iusto veniam asperiores esse nam debitis
-											aperiam amet magni quidem ab necessitatibus, culpa numquam delectus.
-										</p>
-										<h6 class="testimonial-author">Nome</h6>
-										<p class="testimonial-destination">O que a pessoa é</p>
+		<!-- aqui -->
+		<section class="teste" id="testimonial">
+
+			<section class="testimonial1">
+				<div class="wrapper">
+					<!-- Slider main container -->
+					<div class="swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<div class="content-wrapper">
+									<div class="content">
+										<div class="swiper-avatar"><img
+												src="images/testimonial/testimonial1.jpg">
+										</div>
+										<p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+											corrupti adipisci
+											sunt voluptatibus, laboriosam repellendus at officia itaque voluptas
+											totam nulla
+											blanditiis mollitia, deleniti, dolores autem obcaecati. Commodi,
+											beatae ea."</p>
+										<p class="cite">- Lorem Ipsum , ipsum</p>
 									</div>
-								</li>
-								<li>
-									<div class="testimonial-item">
-										<img src="images/testimonial/testimonial2.jpg" alt="icon"
-											class="testimonial-icons">
-										<p>
-											Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero sapiente
-											quisquam, soluta veniam quas ullam velit eligendi quae illo repellendus odit
-											debitis et voluptatem totam deleniti magni, quis nulla laborum.
-										</p>
-										<h6 class="testimonial-author">Nome</h6>
-										<p class="testimonial-destination">O que a pessoa é</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="content-wrapper">
+									<div class="content">
+										<div class="swiper-avatar"><img
+												src="images/testimonial/testimonial2.jpg">
+										</div>
+										<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere
+											consectetur est
+											at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit.
+											Curabitur
+											blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi
+											erat porttitor
+											ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac
+											consectetur ac,
+											vestibulum at eros."</p>
+										<p class="cite">- Lorem Ipsum , ipsum</p>
 									</div>
-								</li>
-								<li>
-									<div class="testimonial-item">
-										<img src="images/testimonial/testimonial3.jpg" alt="icon"
-											class="testimonial-icons">
-										<p>
-											Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus,
-											asperiores qui ipsum ad sunt blanditiis repellat, eos, a sint provident
-											maiores repudiandae voluptatum tempora libero. Eos aliquam vitae repellat.
-											Iure?
-										</p>
-										<h6 class="testimonial-author">Nome</h6>
-										<p class="testimonial-destination">O que a pessoa é</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="content-wrapper">
+									<div class="content">
+										<div class="swiper-avatar"><img
+												src="images/testimonial/testimonial3.jpg">
+										</div>
+										<p>"Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+											eget lacinia odio
+											sem nec elit. Donec id elit non mi porta gravida at eget metus.
+											Aenean eu leo quam.
+											Pellentesque ornare sem lacinia quam venenatis vestibulum."</p>
+										<p class="cite">- Lorem Ipsum , ipsum</p>
 									</div>
-								</li>
-								<li>
-									<div class="testimonial-item">
-										<img src="images/testimonial/testimonial4.jpg" alt="icon"
-											class="testimonial-icons">
-										<p>“
-											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam laboriosam
-											aut tempore atque accusamus laborum reprehenderit quia molestiae quo
-											exercitationem distinctio beatae ullam suscipit nemo, rerum fugit soluta
-											explicabo temporibus.”.
-										</p>
-										<h6 class="testimonial-author">Nome</h6>
-										<p class="testimonial-destination">O que a pessoa é</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="content-wrapper">
+									<div class="content">
+										<div class="swiper-avatar"><img
+												src="images/testimonial/testimonial4.jpg">
+										</div>
+										<p>"Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+											eget lacinia odio
+											sem nec elit. Donec id elit non mi porta gravida at eget metus.
+											Aenean eu leo quam.
+											Pellentesque ornare sem lacinia quam venenatis vestibulum."</p>
+										<p class="cite">- Lorem Ipsum , ipsum</p>
 									</div>
-								</li>
-								<li>
-									<div class="testimonial-item">
-										<img src="images/testimonial/testimonial4.jpg" alt="icon"
-											class="testimonial-icons">
-										<p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem eos
-											quod placeat similique molestiae dignissimos quo atque suscipit. Facilis
-											possimus laudantium provident ullam consequatur cupiditate nihil in, error
-											vel?.
-										</p>
-										<h6 class="testimonial-author">Nome</h6>
-										<p class="testimonial-destination">O que a pessoa é</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="content-wrapper">
+									<div class="content">
+										<div class="swiper-avatar"><img
+												src="images/testimonial/testimonial5.jpg">
+										</div>
+										<p>"Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+											eget lacinia odio
+											sem nec elit. Donec id elit non mi porta gravida at eget metus.
+											Aenean eu leo quam.
+											Pellentesque ornare sem lacinia quam venenatis vestibulum."</p>
+										<p class="cite">- Lorem Ipsum , ipsum</p>
 									</div>
-								</li>
-								<li>
-									<div class="testimonial-item">
-										<img src="images/testimonial/testimonial4.jpg" alt="icon"
-											class="testimonial-icons">
-										<p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum quia
-											doloribus voluptatibus perspiciatis, dolorum repudiandae dolore. Officia
-											similique nisi, quibusdam commodi maxime, quae quaerat nemo enim reiciendis
-											sed odio.”!
-										</p>
-										<h6 class="testimonial-author">Nome</h6>
-										<p class="testimonial-destination">O que a pessoa é</p>
-									</div>
-								</li>
-							</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- If we need pagination -->
+						<!-- If we need navigation buttons -->
+						<div class="swiper-nav-wrapper">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
 						</div>
 					</div>
-				</div>
-			</div>
+			</section>
 		</section>
-		<!-- Solução 1 = Retirar animação  -->
-
 		<section class="contactus mb-2" id="contact">
 			<div class="container">
 				<div class="row mb-5 pb-5">
@@ -494,7 +481,7 @@
 								<br>
 								<p>Endereço:</p>
 								<a href="https://goo.gl/maps/k684YGR7A1o2WpWd8" target="_blank" style="color: black;">
-									<p>R. Ildefonso Albano, 2783</p> 
+									<p>R. Ildefonso Albano, 2783</p>
 									<p class="mb-4">Joaquim Távora, Fortaleza - CE, 60115-001</p>
 								</a>
 							</div>
@@ -592,6 +579,10 @@
 	<script src="vendors/aos/js/aos.js"></script>
 	<script src="vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
 	<script src="js/template.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+	<script src="js/script.js"></script>
+
 </body>
 
 </html>

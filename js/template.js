@@ -49,32 +49,32 @@
 			delay: 100,
 		});
 
-		$("#testimonial-flipster").flipster({
-			style: 'coverflow',
-			spacing: -.9,
-			nav: false,
-			loop: true,
-			buttons: false,
-		});
+		// $("#testimonial-flipster").flipster({
+		// 	style: 'flat',
+		// 	spacing: -0.20000,
+		// 	nav: false,
+		// 	loop: true,
+		// 	buttons: false,
+		// });
 
-		$('.flipster-custom-nav-link').click(function () {
-			var navlinkSelected = parseInt(this.title);
-			$('.flipster-custom-nav-link').removeClass("active");
-			$(this).addClass("active");
-			$("#testimonial-flipster").flipster('jump', navlinkSelected);
-		});
+		// $('.flipster-custom-nav-link').click(function () {
+		// 	var navlinkSelected = parseInt(this.title);
+		// 	$('.flipster-custom-nav-link').removeClass("active");
+		// 	$(this).addClass("active");
+		// 	$("#testimonial-flipster").flipster('jump', navlinkSelected);
+		// });
 
-		$('#toggle-switch').click(function () {
-			if ($('#toggle-switch').is(':checked')) {
-				$('.monthly').addClass("text-active");
-				$('.yearly').removeClass("text-active");
-				$("#toggle-switch").attr("checked", "checked");
-			} else {
-				$('.monthly').removeClass("text-active");
-				$('.yearly').addClass("text-active");
-				$("#toggle-switch").removeAttr("checked");
-			}
-		});
+		// $('#toggle-switch').click(function () {
+		// 	if ($('#toggle-switch').is(':checked')) {
+		// 		$('.monthly').addClass("text-active");
+		// 		$('.yearly').removeClass("text-active");
+		// 		$("#toggle-switch").attr("checked", "checked");
+		// 	} else {
+		// 		$('.monthly').removeClass("text-active");
+		// 		$('.yearly').addClass("text-active");
+		// 		$("#toggle-switch").removeAttr("checked");
+		// 	}
+		// });
 
 		// counter Satisfied clients
 		var maxScVal = 97;

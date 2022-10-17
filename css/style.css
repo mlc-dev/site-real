@@ -11859,7 +11859,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #FF8305;
   border-color: #FF8305;
-  
+
 }
 
 .btn-success:hover {
@@ -20454,11 +20454,22 @@ html {
   background-size: cover;
   background-position: 0px -50px;
   padding-top: 103px;
+  width: 100%;
+  height: 100%;
+  top:-12px;
+  position: relative;
 }
 
 @media (max-width: 991px) {
   .home {
     background-position-x: -48rem;
+    padding-top: 71px;
+  }
+}
+
+@media (max-width: 800px) {
+  .home {
+    background-position: 0px -2rem;
     padding-top: 71px;
   }
 }
@@ -20595,6 +20606,7 @@ section {
   color: #506690;
   font-weight: normal;
   font-size: 14px;
+
 }
 
 .testimonial .flipster__button--prev {
@@ -20933,3 +20945,5 @@ section {
   }
 
 }
+
+/*Caixas de serviços*/
