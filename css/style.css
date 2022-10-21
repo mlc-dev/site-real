@@ -20398,13 +20398,21 @@ h6,
   }
 }
 
-/*AQUI*/
+
 .sidebar-overlay .home {
+  
   padding-top: 0px;
   background-position: 0px -400px;
   background: url(../images/teste.png);
   width: 100%;
 }
+@media (max-width:575px){
+
+  .sidebar-overlay #home{
+    top:-95px;
+   }
+  
+ }
 
 .sidebar-overlay #mobile-menu-overlay {
   position: fixed;
@@ -20452,18 +20460,22 @@ html {
 .home {
   background: url("../images/teste.png") no-repeat;
   background-size: cover;
-  background-position: 0px -50px;
+  background-position: 0px 1.1px;
   padding-top: 103px;
   width: 100%;
   height: 100%;
-  top:-12px;
+  top: -12px;
   position: relative;
+  display: flexbox;
+  flex-direction: row;
+
 }
 
 @media (max-width: 991px) {
   .home {
     background-position-x: -48rem;
     padding-top: 71px;
+
   }
 }
 
@@ -20471,7 +20483,18 @@ html {
   .home {
     background-position: 0px -2rem;
     padding-top: 71px;
+
   }
+}
+
+@media (max-width:575px) {
+
+  /* Home */
+  #home,
+  .home {
+    background-position-x: -37rem;
+  }
+
 }
 
 .main-banner {
@@ -20515,6 +20538,7 @@ section {
 
 .services-box {
   padding: 10px 100px 40px 0;
+  width: 100%;
 }
 
 @media (max-width: 991px) {
@@ -20523,16 +20547,16 @@ section {
   }
 }
 
-.services-box:hover img {
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+/* .services-box:hover img {
+  -webkit-filter: grayscale(100%); */
+/* Safari 6.0 - 9.0 */
+/* filter: grayscale(100%);
   -webkit-transition: all 2s;
   -moz-transition: all 2s;
   -ms-transition: all 2s;
   -o-transition: all 2s;
   transition: all 2s;
-}
+} */
 
 .tick-icon {
   width: 20px;
@@ -20543,7 +20567,7 @@ section {
 
 .testimonial {
   /* background: #a70ff6 url("../images/testimonial-bg.svg"); */
-  background: blue url("../images/teste.svg");
+  background: blue url("../images/testimonial-final.svg");
   color: blue;
   padding: 100px 0 70px 0;
   background-size: cover;
@@ -20946,4 +20970,111 @@ section {
 
 }
 
-/*Caixas de serviços*/
+
+.navbar-nav .nav-item:nth-child(1) .nav-link {
+  position: relative;
+  top: 6px;
+}
+
+
+/* Clientes versão mobile no centro */
+@media (max-width:575px) {
+
+  /* Container */
+  .page-body-wrapper .clients .container {
+    text-align: center;
+  }
+
+}
+
+.clientesHead {
+  text-align: center;
+  margin-top: -80px;
+  margin-bottom: 50px;
+}
+
+/* Consertar a caixa de serviços */
+.fix {
+  position: relative;
+  top: 13px;
+}
+
+/*Consertar imagem do Sobre*/
+@media (max-width:575px) {
+
+  /* Image */
+  #about .aos-init img {
+    width: 100%;
+    text-align: center;
+
+  }
+
+}
+
+
+
+/*Consertar clientes 800x600*/
+@media (max-width:800px) {
+
+  /* Aos init */
+  img.p-1.aos-init.aos-animate {
+    width: 100%;
+  }
+
+}
+
+/*Conserta clientes Mobile*/
+@media (max-width:575px) {
+
+  /* Aos init */
+  img.p-1.aos-init.aos-animate {
+    width: 70%;
+    margin-top: 10%;
+  }
+
+}
+
+/*Consertar caixas de serviços 800x600*/
+@media (max-width:800px) {
+
+  /* Aos init */
+  .services-box>img {
+    width: 100% !important;
+  }
+
+  .services-box>p {
+    padding-right: 40% !important;
+    width: 100% !important;
+  }
+
+}
+
+/*Alinhar texto projetos sucedidos mobile*/
+@media (max-width:575px) {
+
+  /* Font weight bold */
+  .page-body-wrapper div .font-weight-bold {
+    text-align: center;
+  }
+
+}
+/*
+  Consertar paragrafo HOME
+Vai servir por enquanto*/
+@media (max-width:575px){
+
+  /* Paragraph */
+  .main-banner .aos-init p{
+   font-size:100%;
+   max-width:520px;
+  }
+  
+  /* Paragraph */
+  .page-body-wrapper #home .container .row .col-sm-12 .main-banner .d-sm-flex .aos-init p{
+   height:100% !important;
+  }
+  
+ }
+.facebook-ico{
+  margin-top: 2%;
+}

@@ -49,69 +49,40 @@
 			delay: 100,
 		});
 
-		// $("#testimonial-flipster").flipster({
-		// 	style: 'flat',
-		// 	spacing: -0.20000,
-		// 	nav: false,
-		// 	loop: true,
-		// 	buttons: false,
-		// });
-
-		// $('.flipster-custom-nav-link').click(function () {
-		// 	var navlinkSelected = parseInt(this.title);
-		// 	$('.flipster-custom-nav-link').removeClass("active");
-		// 	$(this).addClass("active");
-		// 	$("#testimonial-flipster").flipster('jump', navlinkSelected);
-		// });
-
-		// $('#toggle-switch').click(function () {
-		// 	if ($('#toggle-switch').is(':checked')) {
-		// 		$('.monthly').addClass("text-active");
-		// 		$('.yearly').removeClass("text-active");
-		// 		$("#toggle-switch").attr("checked", "checked");
-		// 	} else {
-		// 		$('.monthly').removeClass("text-active");
-		// 		$('.yearly').addClass("text-active");
-		// 		$("#toggle-switch").removeAttr("checked");
-		// 	}
-		// });
-
 		// counter Satisfied clients
-		var maxScVal = 97;
-		var isc = parseInt($('.scVal').text());
-		var tim;
-		function run() {
-			tim = setInterval(function () {
-				if (isc >= maxScVal) {
-					clearInterval(tim);
-					return;
-				}
-				$('.scVal').text(++isc);
-			}, 100);
-		}
-		run();
+		// var maxScVal = 97;
+		// var isc = parseInt($('.scVal').text());
+		// var tim;
+		// function run() {
+		// 	tim = setInterval(function () {
+		// 		if (isc >= maxScVal) {
+		// 			clearInterval(tim);
+		// 			return;
+		// 		}
+		// 		$('.scVal').text(++isc);
+		// 	}, 100);
+		// }
+		// run();
 		//Counters
 
-		// counter finished Projects
-		var maxfPVal = 100;
+		// Tipo de profissonais
+		var tpProfissionais = 150;
 		var ifP = parseInt($('.fpVal').text());
 		var timfP;
 		function runfP() {
 			timfP = setInterval(function () {
 
-				if (ifP >= maxfPVal) {
+				if (ifP >= tpProfissionais) {
 					clearInterval(timfP);
 					return;
 				}
 				$('.fpVal').text(++ifP);
 
-			}, 1);
+			}, 40);
 		}
 		runfP();
-		//finished Projects
-
-		//counter Team Members
-		var maxtMVal = 125;
+		//Projetos bem sucesdidos
+		var maxtMVal = 45;
 		var itm = parseInt($('.tMVal').text());
 		var timtM;
 		function runtM() {
@@ -126,8 +97,8 @@
 		runtM();
 		//Team Members
 
-		//counter blog post
-		var maxbPVal = 2135;
+		//Contratos atendindos
+		var maxbPVal = 150;
 		var ibP = parseInt($('.bPVal').text());
 		var timbP;
 		function runbP() {

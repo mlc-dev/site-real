@@ -10,23 +10,23 @@
   line-height: 1.2;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
-  background: url(../images/teste.svg) no-repeat;
+  background: url(../images/testimonial-final.svg) no-repeat;
   background-size: cover;
 }
 
-.teste p,
-.teste p {
+.testimonialBody p,
+.testimonialBody p {
   line-height: 1.6;
 }
 
-.teste img,
-.teste img {
+.testimonialBody img,
+.testimonialBody img {
   width: 100%;
   height: auto;
 }
 
-.teste .button,
-.teste .button {
+.testimonialBody .button,
+.testimonialBody .button {
   position: relative;
   display: table;
   padding: 0.75em 3em;
@@ -37,13 +37,13 @@
   text-transform: uppercase;
 }
 
-.teste .button:hover,
-.teste .button:hover {
+.testimonialBody .button:hover,
+.testimonialBody .button:hover {
   background: #2f2f2f;
 }
 
-.teste .wrapper,
-.teste .wrapper {
+.testimonialBody .wrapper,
+.testimonialBody .wrapper {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -52,8 +52,8 @@
   padding: 1.5em;
 }
 
-.teste header,
-.teste header {
+.testimonialBody header,
+.testimonialBody header {
   margin: 0;
   padding: 0;
 }
