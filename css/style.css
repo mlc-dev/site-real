@@ -20403,7 +20403,7 @@ h6,
 
   padding-top: 0px;
   background-position: 0px -400px;
-  background: url(../images/teste.png);
+  background: url(../images/main-banner.png);
   width: 100%;
 }
 
@@ -20459,7 +20459,7 @@ html {
 }
 
 .home {
-  background: url("../images/teste.png") no-repeat;
+  background: url("../images/main-banner.png") no-repeat local;
   background-size: cover;
   background-position: 0px 1.1px;
   padding-top: 103px;
@@ -20467,11 +20467,19 @@ html {
   height: 100%;
   top: -12px;
   position: relative;
-  display: flexbox;
+  /* display: flexbox; */
   flex-direction: row;
 
 }
+@media (max-width:767px) {
 
+  /* Home */
+  #home {
+    transform: translatex(0px) translatey(0px);
+    background-position-x: 40%;
+  }
+
+}
 @media (max-width: 991px) {
   .home {
     background-position-x: -48rem;
@@ -20485,6 +20493,10 @@ html {
     background-position: 0px -2rem;
     padding-top: 71px;
 
+  }
+
+  .text {
+    background-size: 100%;
   }
 }
 
@@ -21129,5 +21141,6 @@ Vai servir por enquanto*/
 }
 
 .zap-zap {
-  width: calc( 200px - 30% ) !important;
+  width: calc(200px - 30%) !important;
 }
+
