@@ -20317,7 +20317,7 @@ h6,
 }
 
 .navbar .navbar-toggler {
-  color: #5c8bca;
+  color: #ff8305;
 }
 
 .navbar .navbar-toggler-icon {
@@ -20533,16 +20533,6 @@ section {
   }
 }
 
-/* .services-box:hover img {
-  -webkit-filter: grayscale(100%); */
-/* Safari 6.0 - 9.0 */
-/* filter: grayscale(100%);
-  -webkit-transition: all 2s;
-  -moz-transition: all 2s;
-  -ms-transition: all 2s;
-  -o-transition: all 2s;
-  transition: all 2s;
-} */
 
 .tick-icon {
   width: 20px;
@@ -21121,4 +21111,22 @@ Vai servir por enquanto*/
 
 .whatsapp-img {
   width: calc(50px + 10%) !important;
+}
+
+
+/*Conserto do banner principal 800x600 e navbar*/
+@media (max-width:991px) {
+
+  .sidebar-overlay .home {
+    margin-top: -9em;
+    background-position-x: 40%;
+    background-position-y: 20%;
+    height: 500px;
+  }
+
+  .navbar .navbar-collapse.show {
+    right: 0;
+    top: -6%;
+    height: 991px;
+  }
 }
